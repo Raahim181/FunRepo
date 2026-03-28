@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bug Fix Request 🛠️</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: #1e1e2f;
+    color: #fff;
+    font-family: Consolas, monospace;
+}
+
+.container {
+    margin: 80px auto;
+    width: 80%;
+    max-width: 600px;
+    background: #2c2c3e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #00ffcc;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #00ffcc;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #00ccaa;
+}
+
+.log {
+    margin-top: 20px;
+    color: #ddd;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>⚠️ Bug Report Detected</h1>
+
+    <p>
+        System: Friendship.exe <br>
+        Issue: Unexpected Anger Exception 😒 <br>
+        Status: Critical 🚨
+    </p>
+
+    <p>
+        Possible Cause: <br>
+        → Developer (me) ne kuch galat bol diya 😅
+    </p>
+
+    <button onclick="fixBug()"> Click Here 🛠️</button>
+
+    <div class="log" id="log"></div>
+</div>
+
+<script>
+function fixBug() {
+    let log = document.getElementById("log");
+
+    log.innerHTML = `
+    Initializing fix... ✅<br>
+    Accepting mistake... ✅<br>
+    Sending virtual chai ☕... & Hugs 🤗✅<br>
+    Requesting forgiveness... ⏳<br><br>
+    <b>Status:</b> Waiting for user response 😇
+    `;
+}
+</script>
+
+</body>
+</html>
